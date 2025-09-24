@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCodes - Plataforma de Aprendizaje</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/session.js"></script>
+    <script src="javascript/chatbot.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/educode_logo.png" alt="Logo EduCodes">
+                <h1>EduCodes R.L.</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="html/cursos.html">Cursos</a></li>
+                <li><a href="html/simuladores.html">Simuladores</a></li>
+                <li><a href="html/foros.html">Foros</a></li>
+                <li><a href="html/consultas.html">Consultas</a></li>                
+            </ul>
+            <div id="login-container"></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-box">
+            <div class="hero-content">
+                <h1>ALTO NIVEL DE APRENDIZAJE</h1>
+                <p>Diseñada para ayudarte a desarrollar habilidades en programación y redes. Ofrecemos módulos interactivos, foros colaborativos y simuladores prácticos para que aprendas de forma dinámica y efectiva. ¡Únete a nuestra comunidad y potencia tu aprendizaje con contenido actualizado y soporte personalizado!</p>
+            </div>
+            <div class="hero-image">
+                <img src="imagenes/Codigo_inicio.jpg" alt="Código en la pantalla">
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbot">
+        <!-- Ícono flotante -->
+        <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
+        
+        <!-- Ventana del chatbot (inicialmente oculta) -->
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                <h3>Chatbot EduCodes</h3>
+                <button onclick="toggleChatbot()">✖</button>
+            </div>
+            <div id="chatbot-messages">
+                <div class="message bot-message">Hola, ¿cómo puedo ayudarte hoy?</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje..." />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+      
+      
+
+    <footer>
+        <p>&copy; 2024 EduCodes. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+</html>
